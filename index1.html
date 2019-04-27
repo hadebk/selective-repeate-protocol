@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Selective Repeat</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+
+<body>
+   
+   <!-- titel -->
+   <p id="title">Selective Repeat Simulation</p>
+
+   <!-- button -->
+  <button id="sendButton">SEND</button>
+
+
+  <div id="container">
+  	<!-- static rec in top -->
+  	<ul id="topStatic">
+  		<li><div id="rec1ts" class="ts"></div></li>
+  		<li><div id="rec2ts" class="ts"></div></li>
+  		<li><div id="rec3ts" class="ts"></div></li>
+  		<li><div id="rec4ts" class="ts"></div></li>
+  		<li><div id="rec5ts" class="ts"></div></li>
+  	</ul>
+  	<!-- dynamic Resend rec in top -->
+  	<ul id="topDynamicRsend">
+  		<li><div id="rec1tdr" class="tdr"></div></li>
+  		<li><div id="rec2tdr" class="tdr"></div></li>
+  		<li><div id="rec3tdr" class="tdr"></div></li>
+  		<li><div id="rec4tdr" class="tdr"></div></li>
+  		<li><div id="rec5tdr" class="tdr"></div></li>
+  	</ul>
+  	<!-- dynamic rec in top -->
+  	<ul id="topDynamic">
+  		<li><div id="rec1td" class="td"></div></li>
+  		<li><div id="rec2td" class="td"></div></li>
+  		<li><div id="rec3td" class="td"></div></li>
+  		<li><div id="rec4td" class="td"></div></li>
+  		<li><div id="rec5td" class="td"></div></li>
+  	</ul>
+  	<!-- static rec in down -->
+  	<ul id="downStatic">
+  		<li><div id="rec1ds" class="ds"></div></li>
+  		<li><div id="rec2ds" class="ds"></div></li>
+  		<li><div id="rec3ds" class="ds"></div></li>
+  		<li><div id="rec4ds" class="ds"></div></li>
+  		<li><div id="rec5ds" class="ds"></div></li>
+  	</ul>
+  </div>
+
+  <!-- //////////////// monitor //////////////// -->
+
+  <div id="monitor">
+        <h3>Monitor</h3>
+
+    <ul>
+      <li><p id="mp1s">packet 1:</p></li>
+      <li><p id="mp1" style="color: yellow"></p></li>
+    </ul>
+
+    <ul>
+      <li><p id="mp2s">packet 2:</p></li>
+      <li><p id="mp2" style="color: yellow"></p></li>
+    </ul>
+
+    <ul>
+      <li><p id="mp3s">packet 3:</p></li>
+      <li><p id="mp3" style="color: yellow"></p></li>
+    </ul>
+
+    <ul>
+      <li><p id="mp4s">packet 4:</p></li>
+      <li><p id="mp4" style="color: yellow"></p></li>
+    </ul>
+
+    <ul>
+      <li><p id="mp5s">packet 5:</p></li>
+      <li><p id="mp5" style="color: yellow"></p></li>
+    </ul>
+
+  </div>
+
+<!-- ///////////////////////// describtion box ////////////////////// -->
+
+  <div id="describtion">
+    <h3>Expalin</h3>
+
+    <ul>
+    	<li><div id="div1"></div></li>
+    	<li><p id="p1">no data received yet</p></li>
+    </ul>
+
+    <ul>
+    	<li><div id="div2"></div></li>
+    	<li><p id="p2">data buffer of sender</p></li>
+    </ul>
+
+    <ul>
+    	<li><div id="div3"></div></li>
+    	<li><p id="p3">acknowledgment</p></li>
+    </ul>
+
+    <ul>
+    	<li><div id="div4"></div></li>
+    	<li><p id="p4">transmission confirmed</p></li>
+    </ul>
+
+    <ul>
+    	<li><div id="div5"></div></li>
+    	<li><p id="p5">data has been delivered to reciver</p></li>
+    </ul>
+     
+  </div>
+
+
+
+   <script src="jquery-1.10.2.min.js"></script>
+   <script src="main.js"></script>p 
+</body>
+</html>
